@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-tag="giogt/jdk"
-version="1.8.0u151"
+IMAGE_NAME="giogt/jdk"
+IMAGE_VERSION_MAJOR="1.8.0"
+IMAGE_VERSION_MINOR="u151"
 
-docker build -t $tag:$version .
+docker build -t ${IMAGE_NAME}:${IMAGE_VERSION_MAJOR}${IMAGE_VERSION_MINOR} . && \
+docker tag ${IMAGE_NAME}:${IMAGE_VERSION_MAJOR}${IMAGE_VERSION_MINOR} ${IMAGE_NAME}:${IMAGE_VERSION_MAJOR}
