@@ -1,5 +1,5 @@
 FROM centos:7.4.1708
-MAINTAINER "Giorgio Carlo Gili Tos" <giorgio.gilitos@gmail.com>
+LABEL maintainer="Giorgio Carlo Gili Tos <giorgio.gilitos@gmail.com>"
 
 # Update packages and install base packages
 # Always clean yum cache at the end, in order to save space in the docker image
