@@ -1,2 +1,2 @@
 # docker-jdk
-java development kit docker images
+Java development kit docker images
